@@ -1,0 +1,8 @@
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\bin\Debug\Laboratorio2Montalvo.exe.config
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\bin\Debug\Laboratorio2Montalvo.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\bin\Debug\Laboratorio2Montalvo.pdb
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\obj\Debug\Laboratorio2Montalvo.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\obj\Debug\Laboratorio2Montalvo.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\obj\Debug\Laboratorio2Montalvo.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\obj\Debug\Laboratorio2Montalvo.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio2Mayerli\Laboratorio2Montalvo\obj\Debug\Laboratorio2Montalvo.pdb
