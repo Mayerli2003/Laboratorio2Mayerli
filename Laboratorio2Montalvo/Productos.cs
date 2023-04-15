@@ -7,6 +7,16 @@ using System.Threading.Tasks;
 
 namespace Laboratorio2Montalvo
 {
+    public class AuxiliarProductos
+    {
+        //Istancia para los productos
+        public static List<string> listaProductos = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+        public static List<string> listaArroz = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+        public static List<string> listaJabonOlor = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+        public static List<string> listaTenisMujer = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+        public static List<string> lista4 = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+        public static List<string> lista5 = new List<string>() { "Arroz", "Jabon de olor", "Tenis para mujer" };
+    }
     class Productos
     {
         public string Nombre { get; set; }
@@ -19,7 +29,7 @@ namespace Laboratorio2Montalvo
         public string Categoria { get; set; }
         public string Area { get; set; }
 
-        public string CreacionProductos(string nombre, string proveedor,string fechaCaducidad, string fechaEntrada, string detalles, double precio, int unidades)
+        public void CreacionProductos(string nombre, string proveedor,string fechaCaducidad, string fechaEntrada, string detalles, double precio, int unidades)
         {
             this.Nombre = nombre;
             this.Proveedor= proveedor;
@@ -31,27 +41,43 @@ namespace Laboratorio2Montalvo
             
 
             Console.WriteLine("_____________________________Creacion de un nuevo producto_____________________________\n");
-            Console.WriteLine("Ingrese el nombre del producto");
-            nombre = Console.ReadLine();
-            Console.WriteLine("Ingrese el nombre del proveedor");
-            proveedor = Console.ReadLine();
-            Console.WriteLine("Ingrese la fecha de caducidad ");
-            fechaCaducidad = Console.ReadLine();
-            Console.WriteLine("Ingrese la fecha de entrada ");
-            fechaEntrada = Console.ReadLine();
-            Console.WriteLine("Ingrese los detalles");
-            detalles = Console.ReadLine();
-            Console.WriteLine("Ingrese el precio del producto");
-            precio = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese las unidades que tendra dicho producto");
-            unidades = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese la area del produto (cocina, limpieza, zapatos, carne)");
-            Area = Console.ReadLine();
-            Console.WriteLine("Ingrese la categoria segun el area elegida");
-            Categoria= Console.ReadLine();
-            Console.WriteLine("Datos del producto ingresado");
+            if(AuxiliarProductos.listaProductos.Count<5)
+            {
+                Console.WriteLine("Ingrese el nombre del producto");
+                nombre = Console.ReadLine();
+                AuxiliarProductos.listaProductos.Add(nombre);
+                Console.WriteLine("Ingrese el nombre del proveedor");
+                proveedor = Console.ReadLine();
+                AuxiliarProductos.lista4.Add(proveedor);
+                Console.WriteLine("Ingrese la fecha de caducidad ");
+                fechaCaducidad = Console.ReadLine();
+                AuxiliarProductos.lista4.Add(fechaCaducidad);
+                Console.WriteLine("Ingrese la fecha de entrada ");
+                fechaEntrada = Console.ReadLine();
+                Console.WriteLine("Ingrese los detalles");
+                detalles = Console.ReadLine();
+                Console.WriteLine("Ingrese el precio del producto");
+                precio = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese las unidades que tendra dicho producto");
+                unidades = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese la area del produto (cocina, limpieza, zapatos, carne)");
+                Area = Console.ReadLine();
+                Console.WriteLine("Ingrese la categoria segun el area elegida");
+                Categoria = Console.ReadLine();
+                Console.WriteLine("Datos del producto ingresado");
+                Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio + "\n" + "Unidades: " + unidades + "\n" + "Area: " + Area + "\n" + "Categoria: " + Categoria);
 
-            return "Nombre: "+nombre+ "\n"+"Proveedor: "+proveedor+ "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio + "\n" + "Unidades: " + unidades + "\n" + "Area: " + Area+ "\n" + "Categoria: " + Categoria ;
+
+            }
+            else
+            {
+                Console.WriteLine("Por el momento solo pueden haber 5 productos ");
+            }
+
+        }
+        class CompraArroz
+        {
+
         }
         
 

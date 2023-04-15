@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -13,21 +14,23 @@ namespace Laboratorio2Montalvo
     public class Program
     {
         private static string respuesta;
-        
+        private static object area4;
+
         //Instancia
-        
+
         static void Main(string[] args)
         {
             
             //Instancias de clases
             CategoriaCocina cocina = new CategoriaCocina();
-            //CategoriaLimpieza limpieza= new CategoriaLimpieza();
-            //CategoriaZapatos zapatos= new CategoriaZapatos();
-            //CategoriaCarnes carnes= new CategoriaCarnes();
-
+            CategoriaLimpieza limpieza = new CategoriaLimpieza();
+            CategoriaZapatos zapatos = new CategoriaZapatos();
+            CategoriaCarnes carnes=new CategoriaCarnes();
+            Categoria5 categoria5 = new Categoria5();
             //Instancia de productos
             Productos productos= new Productos();
             listaAuxiliar listaAuxiliar = new listaAuxiliar();
+            AuxiliarProductos auxiliarProductos = new AuxiliarProductos();
             Inicio inicio = new Inicio();
             int Option;
             
@@ -42,7 +45,7 @@ namespace Laboratorio2Montalvo
                 Console.WriteLine("\n1.Administrador");
                 //El Administrador tiene opciones de agregar areas, categorias, productos y vender productos
                 Console.WriteLine("\n2.Comprador");
-                //El vendedor o empleado solo puede vender el producto
+               
                 //El comprador solo puede realizar la venta
                 Console.WriteLine("\n3.Salir");
 
@@ -110,156 +113,165 @@ namespace Laboratorio2Montalvo
                                         Console.WriteLine(Contador + " " + mostrar);
                                         Contador++;
                                     }
-                                    do
-                                    {
-                                      
-                                        switch (listaAuxiliar.listaAreas.Count)
+                                    //Console.WriteLine("9.Salir");
+                                    
+                                        do
                                         {
-                                            case 0:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area);
-                                                int Contado = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado+ " " + mostrar);
-                                                    Contado++;
-                                                }
-                                                break;
-                                            case 1:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area1 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area1.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area1);
-                                                int Contado1 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado1 + " " + mostrar);
-                                                    Contado1++;
-                                                }
-                                                break; 
-                                            case 2:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area2 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area2.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area2);
-                                                int Contado2 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado2 + " " + mostrar);
-                                                    Contado2++;
-                                                }
-                                                break;
-                                            case 3:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area3 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area3.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area3);
-                                                int Contado3 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado3 + " " + mostrar);
-                                                    Contado3++;
-                                                }
-                                                break;
-                                            case 4:
-                                                Console.Write("4-Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area4 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area4.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area4);
-                                                int Contado4 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado4 + " " + mostrar);
-                                                    Contado4++;
-                                                }
-                                                break;
-                                            case 5:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area5 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area5.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area5);
-                                                int Contado5 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado5 + " " + mostrar);
-                                                    Contado5++;
-                                                }
-                                                break;
-                                            case 6:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area6 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area6.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area6);
-                                                int Contado6 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado6 + " " + mostrar);
-                                                    Contado6++;
-                                                }
-                                                break;
-                                            case 7:
-                                                Console.Write("Ingrese un área (o escriba 'salir' para terminar): ");
-                                                string area7 = Console.ReadLine();
-                                                //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-                                                if (area7.ToLower() == "salir")
-                                                {
-                                                    break;
-                                                }
-                                                listaAuxiliar.listaAreas.Add(area7);
-                                                int Contado7 = 1;
-                                                foreach (string mostrar in listaAuxiliar.listaAreas)
-                                                {
-                                                    Console.WriteLine(Contado7 + " " + mostrar);
-                                                    Contado7++;
-                                                }
-                                                break;
-                                            case 8:
-                                                Console.WriteLine("Por el momento no podemos agregar mas de 8 areas al supermercado");
-                                                Console.ReadLine();
-                                                break;
-                                            default:
+                                            Console.WriteLine("\n¿Qué desea hacer?\n");
+                                            Console.WriteLine("1.Salir");
+                                            Console.WriteLine("2.Agregar las areas faltantes 5-8");
+                                            Console.WriteLine("\nSeleccione una opción 1-2");
+                                            Console.Write("\nIngrese un número entero: ");
+                                            string entrada5 = Console.ReadLine();
 
-                                                Console.WriteLine("Opción no válida.");
+                                            while (!int.TryParse(entrada5, out Option))
+                                            {
+                                                Console.WriteLine("Error: Debe ingresar un número entero.");
+                                                Console.WriteLine("\nIngrese un numero entero:");
+                                                entrada5 = Console.ReadLine();
+                                            }
+                                            switch (Option)
+                                            {
+                                                case 1:
+                                                    Console.WriteLine("Fin de las consultas");
+
+                                                    break;
+                                                case 2:
+                                                    Console.WriteLine("Continuar....");
+                                                do
+                                                {
+                                                    switch (listaAuxiliar.listaAreas.Count)
+                                                    {
+                                                        case 0:
+                                                            Console.Write("1-Ingrese un área : \n");
+                                                            string area = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area);
+                                                            int Contado = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado + " " + mostrar);
+                                                                Contado++;
+                                                            }
+                                                            break;
+                                                        case 1:
+                                                            Console.Write("2-Ingrese un área : \n");
+                                                            string area1 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area1);
+                                                            int Contado1 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado1 + " " + mostrar);
+                                                                Contado1++;
+                                                            }
+                                                            break;
+                                                        case 2:
+                                                            Console.Write("3-Ingrese un área : \n");
+                                                            string area2 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area2);
+                                                            int Contado2 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado2 + " " + mostrar);
+                                                                Contado2++;
+                                                            }
+                                                            break;
+                                                        case 3:
+                                                            Console.Write("4-Ingrese un área : \n");
+                                                            string area3 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area3);
+                                                            int Contado3 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado3 + " " + mostrar);
+                                                                Contado3++;
+                                                            }
+                                                            break;
+                                                        case 4:
+
+                                                            Console.Write("5-Ingrese un área : \n");
+                                                            string area4 = Console.ReadLine();
+
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+                                                            listaAuxiliar.listaAreas.Add(area4);
+                                                            int Contado4 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado4 + " " + mostrar);
+                                                                Contado4++;
+                                                            }
+
+
+                                                            break;
+                                                        case 5:
+                                                            Console.Write("6-Ingrese un área : \n");
+                                                            string area5 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area5);
+                                                            int Contado5 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado5 + " " + mostrar);
+                                                                Contado5++;
+                                                            }
+                                                            break;
+                                                        case 6:
+                                                            Console.Write("7-Ingrese un área : \n");
+                                                            string area6 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area6);
+                                                            int Contado6 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado6 + " " + mostrar);
+                                                                Contado6++;
+                                                            }
+                                                            break;
+                                                        case 7:
+                                                            Console.Write("8-Ingrese un área : \n");
+                                                            string area7 = Console.ReadLine();
+                                                            //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
+
+                                                            listaAuxiliar.listaAreas.Add(area7);
+                                                            int Contado7 = 1;
+                                                            foreach (string mostrar in listaAuxiliar.listaAreas)
+                                                            {
+                                                                Console.WriteLine(Contado7 + " " + mostrar);
+                                                                Contado7++;
+                                                            }
+                                                            break;
+                                                        case 8:
+                                                            Console.WriteLine("Por el momento no podemos agregar más de 8 áreas al supermercado...");
+                                                            Console.ReadLine();
+                                                            break;
+                                                        default:
+
+                                                            Console.WriteLine("Opción no válida.");
+                                                            break;
+
+                                                    }
+                                                    Console.ReadKey();
+
+                                                }
+                                                while (listaAuxiliar.listaAreas.Count != 8);
                                                 break;
 
+                                            }
                                         }
-                                        Console.ReadKey();
+                                        while (Option!= 1) ;
 
-                                    }
-                                    while (listaAuxiliar.listaAreas.Count<8);
-                                   
-                                  
-                                    break;
+                                        break;
+     
+                                        
                                 case 2:
                                     Console.WriteLine("Opcion 2");
                                     Console.WriteLine("----------------------------CREACIÓN DE CATEGORÍAS---------------------------- ");
@@ -272,7 +284,7 @@ namespace Laboratorio2Montalvo
                                             Console.WriteLine(Contar + " " + mostrar);
                                             Contar++;
                                         }
-                                        Console.WriteLine("11.Salir");
+                                        Console.WriteLine("9.Salir");
                                         Console.WriteLine("\nNOTA: de la opcion 1 a la 4 ya contienen categorias");
 
                                         if (listaAuxiliar.listaAreas.Count > 4)
@@ -300,23 +312,35 @@ namespace Laboratorio2Montalvo
                                                 Console.WriteLine("----------------------------Opcion agregar categorias de cocina----------------------------");
                                                 cocina.lista();
                                                 break;
-                                            //case 2:
-                                            //    Console.WriteLine("----------------------------Opcion agregar categorias de Limpieza----------------------------");
-                                            //    limpieza.lista();
-                                            //    break;
-                                            //case 3:
-                                            //    Console.WriteLine("----------------------------Opcion agregar categorias de Zapatos----------------------------");
-                                            //    zapatos.lista();
-                                            //    break;
-                                            //case 4:
-                                            //    Console.WriteLine("----------------------------Opcion agregar categorias de Carnes----------------------------");
-                                            //    carnes.lista();
-                                            //    break;
+                                            case 2:
+                                                Console.WriteLine("----------------------------Opcion agregar categorias de Limpieza----------------------------");
+                                                limpieza.lista();
+                                                break;
+                                            case 3:
+                                                Console.WriteLine("----------------------------Opcion agregar categorias de Zapatos----------------------------");
+                                                zapatos.lista();
+                                                break;
+                                            case 4:
+                                                Console.WriteLine("----------------------------Opcion agregar categorias de Carnes----------------------------");
+                                                carnes.lista();
+                                                break;
                                             case 5:
-                                                if (listaAuxiliar.listaAreas[4] != null) 
-                                                { 
 
+                                                if (listaAuxiliar.listaAreas.Count <= 4 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                {
+
+                                                    Console.WriteLine("El espacio [4] de la lista está vacío.");
+                                                    Console.ReadLine();
+                                                    
                                                 }
+                                                else
+                                                    
+                                                {
+                                                    Console.WriteLine($"El espacio [4] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    categoria5.lista();
+                                                    Console.ReadLine();
+                                                }
+                                           
                                                 break; 
                                             case 6:
                                                 break;
@@ -342,16 +366,70 @@ namespace Laboratorio2Montalvo
                                         }
 
                                     }
-                                    while (Option != 11);
+                                    while (Option != 9);
                                    
                                     break;
                                 case 3:
                                     Console.WriteLine("Opcion 3");
                                     Console.WriteLine("----------------------------Creacion de Productos---------------------------- ");
                                     productos.CreacionProductos(productos.Nombre,productos.Proveedor, productos.FechaCaducidad, productos.FechaEntrada, productos.Detalles, productos.Precio, productos.Unidades);
-                                    Console.ReadLine();
+                                    do
+                                    {
+                                        Console.WriteLine("\n Lista de Productos actualizada");
+                                        int Contarr = 1;
+                                        foreach (string mostrar in AuxiliarProductos.listaProductos)
+                                        {
+                                            Console.WriteLine(Contarr + " " + mostrar);
+                                            Contarr++;
+                                        }
+                                        Console.WriteLine("6 Salir");
+                                        Console.ReadLine();
+                                        Console.WriteLine("Ingrese la opcion de la cual quiere visualizar los detalles de los productos:");
+                                        Console.WriteLine("\nIngrese el numero de la opcion (1-6)");
+                                        Console.Write("\nIngrese un número entero: ");
+                                        string entrada4 = Console.ReadLine();
+
+                                        while (!int.TryParse(entrada4, out Option))
+                                        {
+                                            Console.WriteLine("Error: Debe ingresar un número entero.");
+                                            Console.WriteLine("\nIngrese un numero entero:");
+                                            entrada4 = Console.ReadLine();
+                                        }
+                                        switch (Option)
+                                        {
+                                            case 1:
+                                                break;
+                                            case 2:
+                                                break;
+                                            case 3:
+                                                break;
+                                            case 4:
+                                                break;
+                                            case 5:
+                                                break;
+                                            case 6:
+
+                                                Console.WriteLine("Fin de las consultas");
+                                                Console.ReadLine();
+                                                Environment.Exit(0);
+                                                break;
+                                            default:
+
+                                                Console.WriteLine("Opción no válida.");
+                                                break;
+
+
+                                        }
+
+                                    }
+                                    while(Option != 6);
+                                    
+
                                     break;
                                 case 4:
+                                    Console.WriteLine("Opcion 4");
+                                    Console.WriteLine("----------------------------Comprar producto---------------------------- ");
+
                                     break;
                                 case 5:
 
