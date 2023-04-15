@@ -561,7 +561,7 @@ namespace Laboratorio2Montalvo
                                     {
                                         Console.WriteLine($"-{mostrar}");
                                     }
-                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[5]);
                                     string dato0 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato0);
                                     Console.WriteLine("Lista ya editada");
@@ -573,7 +573,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 1:
 
-                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[5]);
                                     string dato1 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato1);
                                     Console.WriteLine("Lista ya editada");
@@ -584,7 +584,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 2:
 
-                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato2 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato2);
                                     Console.WriteLine("Lista ya editada");
@@ -595,7 +595,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
 
-                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato3 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato3);
                                     Console.WriteLine("Lista ya editada");
@@ -606,7 +606,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 4:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string cocina4 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina4);
                                     Console.WriteLine("Lista ya editada");
@@ -617,7 +617,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 5:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string cocina5 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina5);
                                     Console.WriteLine("Lista ya editada");
@@ -628,7 +628,7 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 6:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string cocina6 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina6);
                                     Console.WriteLine("Lista ya editada");
@@ -662,6 +662,429 @@ namespace Laboratorio2Montalvo
                
             }
             while (Option!=1);
+            Console.ReadLine();
+        }
+    }
+    class Categoria6 : ProcesoCategoria
+    {
+        int Option;
+        public override void lista()
+        {
+            do
+            {
+                Console.WriteLine("\n¿Qué desea hacer?\n");
+                Console.WriteLine("1.Salir");
+                Console.WriteLine("2.Agregar las categorias faltantes");
+                Console.WriteLine("\nSeleccione una opción 1-2");
+                Console.Write("\nIngrese un número entero: ");
+                string entrada6 = Console.ReadLine();
+
+
+                while (!int.TryParse(entrada6, out Option))
+                {
+                    Console.WriteLine("Error: Debe ingresar un número entero.");
+                    Console.WriteLine("\nIngrese un numero entero:");
+                    entrada6 = Console.ReadLine();
+                }
+                switch (Option)
+                {
+                    case 1:
+                        Console.WriteLine("Fin de las consultas");
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        do
+                        {
+                            switch (listaAuxiliar.lista5.Count)
+                            {
+                                case 0:
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[6]);
+                                    string dato0 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato0);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+
+                                    break;
+                                case 1:
+
+                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[6]);
+                                    string dato1 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato1);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 2:
+
+                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    string dato2 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato2);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 3:
+
+                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    string dato3 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato3);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 4:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    string dato4 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato4);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 5:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    string dato5 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato5);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 6:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    string dato6 = Console.ReadLine();
+                                    listaAuxiliar.lista6.Add(dato6);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 7:
+                                    int Contador = 1;
+                                    foreach (string mostrar in listaAuxiliar.lista6)
+                                    {
+                                        Console.WriteLine(Contador + " " + mostrar);
+                                        Contador++;
+                                    }
+                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.ReadLine();
+                                    break;
+
+                            }
+                            Console.ReadKey();
+
+                        }
+                        while (listaAuxiliar.lista5.Count != 7);
+                        break;
+                    default:
+
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+            }
+            while (Option != 1);
+            Console.ReadLine();
+        }
+    }
+    class Categoria7 : ProcesoCategoria
+    {
+        int Option;
+        public override void lista()
+        {
+            do
+            {
+                Console.WriteLine("\n¿Qué desea hacer?\n");
+                Console.WriteLine("1.Salir");
+                Console.WriteLine("2.Agregar las categorias faltantes");
+                Console.WriteLine("\nSeleccione una opción 1-2");
+                Console.Write("\nIngrese un número entero: ");
+                string entrada6 = Console.ReadLine();
+
+
+                while (!int.TryParse(entrada6, out Option))
+                {
+                    Console.WriteLine("Error: Debe ingresar un número entero.");
+                    Console.WriteLine("\nIngrese un numero entero:");
+                    entrada6 = Console.ReadLine();
+                }
+                switch (Option)
+                {
+                    case 1:
+                        Console.WriteLine("Fin de las consultas");
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        do
+                        {
+                            switch (listaAuxiliar.lista5.Count)
+                            {
+                                case 0:
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[7]);
+                                    string dato0 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato0);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+
+                                    break;
+                                case 1:
+
+                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[7]);
+                                    string dato1 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato1);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 2:
+
+                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    string dato2 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato2);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 3:
+
+                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    string dato3 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato3);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 4:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    string dato4 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato4);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 5:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    string dato5 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato5);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 6:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    string dato6 = Console.ReadLine();
+                                    listaAuxiliar.lista7.Add(dato6);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 7:
+                                    int Contador = 1;
+                                    foreach (string mostrar in listaAuxiliar.lista7)
+                                    {
+                                        Console.WriteLine(Contador + " " + mostrar);
+                                        Contador++;
+                                    }
+                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.ReadLine();
+                                    break;
+
+                            }
+                            Console.ReadKey();
+
+                        }
+                        while (listaAuxiliar.lista5.Count != 7);
+                        break;
+                    default:
+
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+            }
+            while (Option != 1);
+            Console.ReadLine();
+        }
+    }
+    class Categoria8 : ProcesoCategoria
+    {
+        int Option;
+        public override void lista()
+        {
+            do
+            {
+                Console.WriteLine("\n¿Qué desea hacer?\n");
+                Console.WriteLine("1.Salir");
+                Console.WriteLine("2.Agregar las categorias faltantes");
+                Console.WriteLine("\nSeleccione una opción 1-2");
+                Console.Write("\nIngrese un número entero: ");
+                string entrada6 = Console.ReadLine();
+
+
+                while (!int.TryParse(entrada6, out Option))
+                {
+                    Console.WriteLine("Error: Debe ingresar un número entero.");
+                    Console.WriteLine("\nIngrese un numero entero:");
+                    entrada6 = Console.ReadLine();
+                }
+                switch (Option)
+                {
+                    case 1:
+                        Console.WriteLine("Fin de las consultas");
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        do
+                        {
+                            switch (listaAuxiliar.lista5.Count)
+                            {
+                                case 0:
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[8]);
+                                    string dato0 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato0);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+
+                                    break;
+                                case 1:
+
+                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[8]);
+                                    string dato1 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato1);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 2:
+
+                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[8]);
+                                    string dato2 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato2);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 3:
+
+                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[8]);
+                                    string dato3 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato3);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 4:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[8]);
+                                    string dato4 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato4);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 5:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[8]);
+                                    string dato5 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato5);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 6:
+
+                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[8]);
+                                    string dato6 = Console.ReadLine();
+                                    listaAuxiliar.lista8.Add(dato6);
+                                    Console.WriteLine("Lista ya editada");
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    break;
+                                case 7:
+                                    int Contador = 1;
+                                    foreach (string mostrar in listaAuxiliar.lista8)
+                                    {
+                                        Console.WriteLine(Contador + " " + mostrar);
+                                        Contador++;
+                                    }
+                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.ReadLine();
+                                    break;
+
+                            }
+                            Console.ReadKey();
+
+                        }
+                        while (listaAuxiliar.lista5.Count != 7);
+                        break;
+                    default:
+
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+            }
+            while (Option != 1);
             Console.ReadLine();
         }
     }

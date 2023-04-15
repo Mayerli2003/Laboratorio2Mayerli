@@ -26,7 +26,11 @@ namespace Laboratorio2Montalvo
             CategoriaLimpieza limpieza = new CategoriaLimpieza();
             CategoriaZapatos zapatos = new CategoriaZapatos();
             CategoriaCarnes carnes=new CategoriaCarnes();
+            //Instancias de categorias
             Categoria5 categoria5 = new Categoria5();
+            Categoria6 categoria6 = new Categoria6();
+            Categoria7 categoria7 = new Categoria7();
+            Categoria8 categoria8 = new Categoria8();
             //Instancia de productos
             Productos productos= new Productos();
             listaAuxiliar listaAuxiliar = new listaAuxiliar();
@@ -346,17 +350,56 @@ namespace Laboratorio2Montalvo
                                            
                                                 break; 
                                             case 6:
+                                                if (listaAuxiliar.listaAreas.Count <= 5 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                {
+
+                                                    Console.WriteLine("El espacio [5] de la lista está vacío.");
+                                                    Console.ReadLine();
+
+                                                }
+                                                else
+
+                                                {
+                                                    Console.WriteLine($"El espacio [5] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    categoria6.lista();
+                                                    Console.ReadLine();
+                                                }
                                                 break;
                                             case 7:
+                                                if (listaAuxiliar.listaAreas.Count <= 6 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                {
+
+                                                    Console.WriteLine("El espacio [6] de la lista está vacío.");
+                                                    Console.ReadLine();
+
+                                                }
+                                                else
+
+                                                {
+                                                    Console.WriteLine($"El espacio [6] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    categoria7.lista();
+                                                    Console.ReadLine();
+                                                }
                                                 break;
                                             case 8:
-                                                break;
-                                            case 9:
-                                                break;
-                                            case 10:
-                                                break;
+                                                if (listaAuxiliar.listaAreas.Count <= 7 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                {
 
-                                            case 11:
+                                                    Console.WriteLine("El espacio [6] de la lista está vacío.");
+                                                    Console.ReadLine();
+
+                                                }
+                                                else
+
+                                                {
+                                                    Console.WriteLine($"El espacio [6] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    categoria8.lista();
+                                                    Console.ReadLine();
+                                                }
+                                                break;
+                                            
+
+                                            case 9:
 
                                                 Console.WriteLine("Fin de las consultas");
                                                 Console.ReadLine();
@@ -401,14 +444,44 @@ namespace Laboratorio2Montalvo
                                         switch (Option)
                                         {
                                             case 1:
+                                                foreach (string mostrar in AuxiliarProductos.listaArroz)
+                                                {
+                                                    Console.WriteLine(Contarr + " " + mostrar);
+                                                    Contarr++;
+                                                }
+                                                Console.WriteLine();
                                                 break;
                                             case 2:
+                                                foreach (string mostrar in AuxiliarProductos.listaJabonOlor)
+                                                {
+                                                    Console.WriteLine(Contarr + " " + mostrar);
+                                                    Contarr++;
+                                                }
+                                                Console.WriteLine();
                                                 break;
                                             case 3:
+                                                foreach (string mostrar in AuxiliarProductos.listaTenisMujer)
+                                                {
+                                                    Console.WriteLine(Contarr + " " + mostrar);
+                                                    Contarr++;
+                                                }
+                                                Console.WriteLine();
                                                 break;
                                             case 4:
+                                                foreach (string mostrar in AuxiliarProductos.lista4)
+                                                {
+                                                    Console.WriteLine(Contarr + " " + mostrar);
+                                                    Contarr++;
+                                                }
+                                                Console.WriteLine();
                                                 break;
                                             case 5:
+                                                foreach (string mostrar in AuxiliarProductos.lista5)
+                                                {
+                                                    Console.WriteLine(Contarr + " " + mostrar);
+                                                    Contarr++;
+                                                }
+                                                Console.WriteLine();
                                                 break;
                                             case 6:
 
@@ -430,11 +503,530 @@ namespace Laboratorio2Montalvo
 
                                     break;
                                 case 4:
+
                                     Console.WriteLine("Opcion 4");
                                     Console.WriteLine("----------------------------Comprar producto---------------------------- ");
+                                    do
+                                    {
+                                       
+                                        int Contarr = 1;
+                                        foreach (string mostrar in AuxiliarProductos.listaProductos)
+                                        {
+                                            Console.WriteLine(Contarr + " " + mostrar);
+                                            Contarr++;
+                                        }
+                                        Console.WriteLine("6 Salir");
+                                        Console.ReadLine();
+                                        Console.WriteLine("Ingrese la opcion del producto que quiere comprar:");
+                                        Console.WriteLine("\nIngrese el numero de la opcion (1-6)");
+                                        Console.Write("\nIngrese un número entero: ");
+                                        string entrada4 = Console.ReadLine();
+
+                                        while (!int.TryParse(entrada4, out Option))
+                                        {
+                                            Console.WriteLine("Error: Debe ingresar un número entero.");
+                                            Console.WriteLine("\nIngrese un numero entero:");
+                                            entrada4 = Console.ReadLine();
+                                        }
+                                        switch (Option)
+                                        {
+                                            case 1:
+                                                foreach (string mostrar in AuxiliarProductos.listaArroz)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                int n = int.Parse(Console.ReadLine());
+                                                int proceso = AuxiliarProductos.listaArrozUnidades[0] - n;
+                                                
+                                                if(proceso > 0)
+                                                {
+                                                    AuxiliarProductos.listaArrozUnidades[0] = proceso;
+                                                    foreach (string mostrar in AuxiliarProductos.listaArroz)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    Console.WriteLine("Realizar el pago");
+                                                    double total = n * AuxiliarProductos.listaArrozPrecio[0];
+                                                    Console.WriteLine("El total a pagar es de " + total);
+
+                                                }
+                                                if (proceso < 0)
+                                                {
+                                                    Console.WriteLine("No hay suficientes unidades faltan "+proceso);
+
+                                                }
+                                                break;
+                                            case 2:
+                                                foreach (string mostrar in AuxiliarProductos.listaJabonOlor)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                int nn = int.Parse(Console.ReadLine());
+                                                int proceso1 = AuxiliarProductos.listaJabonOlorUnidades[0] - nn;
+
+                                                if (proceso1 > 0)
+                                                {
+                                                    AuxiliarProductos.listaJabonOlorUnidades[0] = proceso1;
+                                                    foreach (string mostrar in AuxiliarProductos.listaJabonOlor)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    Console.WriteLine("Realizar el pago");
+                                                    double total = nn * AuxiliarProductos.listaJabonOlorPrecio[0];
+                                                    Console.WriteLine("El total a pagar es de " + total);
+
+                                                }
+                                                if (proceso1 < 0)
+                                                {
+                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso1);
+
+                                                }
+                                                break;
+                                            case 3:
+                                                foreach (string mostrar in AuxiliarProductos.listaTenisMujer)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                int nnn = int.Parse(Console.ReadLine());
+                                                int proceso2 = AuxiliarProductos.listaArrozUnidades[0] - nnn;
+
+                                                if (proceso2 > 0)
+                                                {
+                                                    AuxiliarProductos.listaTenisMujerUnidades[0] = proceso2;
+                                                    foreach (string mostrar in AuxiliarProductos.listaTenisMujer)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    Console.WriteLine("Realizar el pago");
+                                                    double total = nnn * AuxiliarProductos.listaTenisMujerPrecio[0];
+                                                    Console.WriteLine("El total a pagar es de " + total);
+
+                                                }
+                                                if (proceso2 < 0)
+                                                {
+                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso2);
+
+                                                }
+                                                break;
+                                            case 4:
+                                                foreach (string mostrar in AuxiliarProductos.lista4)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (double mostrar in AuxiliarProductos.lista4Precio)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (int mostrar in AuxiliarProductos.lista4Unidades)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                int nnnn = int.Parse(Console.ReadLine());
+                                                int proceso3 = AuxiliarProductos.lista4Unidades[0] - nnnn;
+
+                                                if (proceso3 > 0)
+                                                {
+                                                    AuxiliarProductos.lista4Unidades[0] = proceso3;
+                                                    foreach (string mostrar in AuxiliarProductos.lista4)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (double mostrar in AuxiliarProductos.lista4Precio)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (int mostrar in AuxiliarProductos.lista4Unidades)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    Console.WriteLine("Realizar el pago");
+                                                    double total = nnnn * AuxiliarProductos.lista4Precio[0];
+                                                    Console.WriteLine("El total a pagar es de " + total);
+
+                                                }
+                                                if (proceso3 < 0)
+                                                {
+                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso3);
+
+                                                }
+                                                break;
+                                            case 5:
+                                                foreach (string mostrar in AuxiliarProductos.lista5)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (double mostrar in AuxiliarProductos.lista5Precio)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                foreach (int mostrar in AuxiliarProductos.lista5Unidades)
+                                                {
+                                                    Console.WriteLine($"-{mostrar}");
+                                                }
+                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                int nnnnn = int.Parse(Console.ReadLine());
+                                                int proceso4 = AuxiliarProductos.lista5Unidades[0] - nnnnn;
+
+                                                if (proceso4 > 0)
+                                                {
+                                                    AuxiliarProductos.lista5Unidades[0] = proceso4;
+                                                    foreach (string mostrar in AuxiliarProductos.lista5)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (double mostrar in AuxiliarProductos.lista5Precio)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    foreach (int mostrar in AuxiliarProductos.lista5Unidades)
+                                                    {
+                                                        Console.WriteLine($"-{mostrar}");
+                                                    }
+                                                    Console.WriteLine("Realizar el pago");
+                                                    double total = nnnnn * AuxiliarProductos.lista5Precio[0];
+                                                    Console.WriteLine("El total a pagar es de " + total);
+
+                                                }
+                                                if (proceso4 < 0)
+                                                {
+                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso4);
+
+                                                }
+
+                                                break;
+                                            case 6:
+
+                                                Console.WriteLine("Fin de las consultas");
+                                                Console.ReadLine();
+                                                Environment.Exit(0);
+                                                break;
+                                            default:
+
+                                                Console.WriteLine("Opción no válida.");
+                                                break;
+
+
+                                        }
+
+                                    }
+                                    while (Option != 6);
 
                                     break;
                                 case 5:
+                                    Console.WriteLine("Fin de las consultas");
+                                    Console.ReadLine();
+                                    Environment.Exit(0);
+                                    break;
+
+
+                                default:
+
+                                    Console.WriteLine("Opción no válida.");
+                                    break;
+
+
+
+                            }
+
+                            
+                        }
+                        while (Option != 5);
+                        break;
+                    case 2:
+                        Console.WriteLine("----------------------------Comprar producto---------------------------- ");
+                        do
+                        {
+
+                            int Contarr = 1;
+                            foreach (string mostrar in AuxiliarProductos.listaProductos)
+                            {
+                                Console.WriteLine(Contarr + " " + mostrar);
+                                Contarr++;
+                            }
+                            Console.WriteLine("6 Salir");
+                            Console.ReadLine();
+                            Console.WriteLine("Ingrese la opcion del producto que quiere comprar:");
+                            Console.WriteLine("\nIngrese el numero de la opcion (1-6)");
+                            Console.Write("\nIngrese un número entero: ");
+                            string entrada4 = Console.ReadLine();
+
+                            while (!int.TryParse(entrada4, out Option))
+                            {
+                                Console.WriteLine("Error: Debe ingresar un número entero.");
+                                Console.WriteLine("\nIngrese un numero entero:");
+                                entrada4 = Console.ReadLine();
+                            }
+                            switch (Option)
+                            {
+                                case 1:
+                                    foreach (string mostrar in AuxiliarProductos.listaArroz)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    int n = int.Parse(Console.ReadLine());
+                                    int proceso = AuxiliarProductos.listaArrozUnidades[0] - n;
+
+                                    if (proceso > 0)
+                                    {
+                                        AuxiliarProductos.listaArrozUnidades[0] = proceso;
+                                        foreach (string mostrar in AuxiliarProductos.listaArroz)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        Console.WriteLine("Realizar el pago");
+                                        double total = n * AuxiliarProductos.listaArrozPrecio[0];
+                                        Console.WriteLine("El total a pagar es de " + total);
+
+                                    }
+                                    if (proceso < 0)
+                                    {
+                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso);
+
+                                    }
+                                    break;
+                                case 2:
+                                    foreach (string mostrar in AuxiliarProductos.listaJabonOlor)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    int nn = int.Parse(Console.ReadLine());
+                                    int proceso1 = AuxiliarProductos.listaJabonOlorUnidades[0] - nn;
+
+                                    if (proceso1 > 0)
+                                    {
+                                        AuxiliarProductos.listaJabonOlorUnidades[0] = proceso1;
+                                        foreach (string mostrar in AuxiliarProductos.listaJabonOlor)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        Console.WriteLine("Realizar el pago");
+                                        double total = nn * AuxiliarProductos.listaJabonOlorPrecio[0];
+                                        Console.WriteLine("El total a pagar es de " + total);
+
+                                    }
+                                    if (proceso1 < 0)
+                                    {
+                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso1);
+
+                                    }
+                                    break;
+                                case 3:
+                                    foreach (string mostrar in AuxiliarProductos.listaTenisMujer)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    int nnn = int.Parse(Console.ReadLine());
+                                    int proceso2 = AuxiliarProductos.listaArrozUnidades[0] - nnn;
+
+                                    if (proceso2 > 0)
+                                    {
+                                        AuxiliarProductos.listaTenisMujerUnidades[0] = proceso2;
+                                        foreach (string mostrar in AuxiliarProductos.listaTenisMujer)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        Console.WriteLine("Realizar el pago");
+                                        double total = nnn * AuxiliarProductos.listaTenisMujerPrecio[0];
+                                        Console.WriteLine("El total a pagar es de " + total);
+
+                                    }
+                                    if (proceso2 < 0)
+                                    {
+                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso2);
+
+                                    }
+                                    break;
+                                case 4:
+                                    foreach (string mostrar in AuxiliarProductos.lista4)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (double mostrar in AuxiliarProductos.lista4Precio)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (int mostrar in AuxiliarProductos.lista4Unidades)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    int nnnn = int.Parse(Console.ReadLine());
+                                    int proceso3 = AuxiliarProductos.lista4Unidades[0] - nnnn;
+
+                                    if (proceso3 > 0)
+                                    {
+                                        AuxiliarProductos.lista4Unidades[0] = proceso3;
+                                        foreach (string mostrar in AuxiliarProductos.lista4)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (double mostrar in AuxiliarProductos.lista4Precio)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (int mostrar in AuxiliarProductos.lista4Unidades)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        Console.WriteLine("Realizar el pago");
+                                        double total = nnnn * AuxiliarProductos.lista4Precio[0];
+                                        Console.WriteLine("El total a pagar es de " + total);
+
+                                    }
+                                    if (proceso3 < 0)
+                                    {
+                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso3);
+
+                                    }
+                                    break;
+                                case 5:
+                                    foreach (string mostrar in AuxiliarProductos.lista5)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (double mostrar in AuxiliarProductos.lista5Precio)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    foreach (int mostrar in AuxiliarProductos.lista5Unidades)
+                                    {
+                                        Console.WriteLine($"-{mostrar}");
+                                    }
+                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    int nnnnn = int.Parse(Console.ReadLine());
+                                    int proceso4 = AuxiliarProductos.lista5Unidades[0] - nnnnn;
+
+                                    if (proceso4 > 0)
+                                    {
+                                        AuxiliarProductos.lista5Unidades[0] = proceso4;
+                                        foreach (string mostrar in AuxiliarProductos.lista5)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (double mostrar in AuxiliarProductos.lista5Precio)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        foreach (int mostrar in AuxiliarProductos.lista5Unidades)
+                                        {
+                                            Console.WriteLine($"-{mostrar}");
+                                        }
+                                        Console.WriteLine("Realizar el pago");
+                                        double total = nnnnn * AuxiliarProductos.lista5Precio[0];
+                                        Console.WriteLine("El total a pagar es de " + total);
+
+                                    }
+                                    if (proceso4 < 0)
+                                    {
+                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso4);
+
+                                    }
+
+                                    break;
+                                case 6:
 
                                     Console.WriteLine("Fin de las consultas");
                                     Console.ReadLine();
@@ -444,15 +1036,9 @@ namespace Laboratorio2Montalvo
 
                                     Console.WriteLine("Opción no válida.");
                                     break;
+
+
                             }
-
-
-                        }
-                        while (Option != 5);
-                        break;
-                    case 2:
-                        do
-                        {
 
                         }
                         while (Option != 6);
@@ -468,10 +1054,10 @@ namespace Laboratorio2Montalvo
                         Console.WriteLine("Opción no válida.");
                         break;
 
+
                 }
-                            
-               
-                
+
+
             }
             while (Option != 3);
 
