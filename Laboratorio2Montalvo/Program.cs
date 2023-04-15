@@ -142,16 +142,17 @@ namespace Laboratorio2Montalvo
 
                                                     break;
                                                 case 2:
+                                                Console.WriteLine(" ");
                                                     Console.WriteLine("Continuar....");
                                                 do
                                                 {
                                                     switch (listaAuxiliar.listaAreas.Count)
                                                     {
                                                         case 0:
-                                                            Console.Write("1-Ingrese un área : \n");
+                                                            Console.Write("\n1-Ingrese un área : \n");
                                                             string area = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area);
                                                             int Contado = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -161,10 +162,10 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 1:
-                                                            Console.Write("2-Ingrese un área : \n");
+                                                            Console.Write("\n2-Ingrese un área : \n");
                                                             string area1 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area1);
                                                             int Contado1 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -174,10 +175,10 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 2:
-                                                            Console.Write("3-Ingrese un área : \n");
+                                                            Console.Write("\n3-Ingrese un área : \n");
                                                             string area2 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area2);
                                                             int Contado2 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -187,10 +188,10 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 3:
-                                                            Console.Write("4-Ingrese un área : \n");
+                                                            Console.Write("\n4-Ingrese un área : \n");
                                                             string area3 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area3);
                                                             int Contado3 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -201,9 +202,9 @@ namespace Laboratorio2Montalvo
                                                             break;
                                                         case 4:
 
-                                                            Console.Write("5-Ingrese un área : \n");
+                                                            Console.Write("\n5-Ingrese un área : \n");
                                                             string area4 = Console.ReadLine();
-
+                                                            Console.WriteLine(" ");
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
                                                             listaAuxiliar.listaAreas.Add(area4);
                                                             int Contado4 = 1;
@@ -216,10 +217,10 @@ namespace Laboratorio2Montalvo
 
                                                             break;
                                                         case 5:
-                                                            Console.Write("6-Ingrese un área : \n");
+                                                            Console.Write("\n6-Ingrese un área : \n");
                                                             string area5 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area5);
                                                             int Contado5 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -229,10 +230,10 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 6:
-                                                            Console.Write("7-Ingrese un área : \n");
+                                                            Console.Write("\n7-Ingrese un área : \n");
                                                             string area6 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area6);
                                                             int Contado6 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -242,10 +243,10 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 7:
-                                                            Console.Write("8-Ingrese un área : \n");
+                                                            Console.Write("\n8-Ingrese un área : \n");
                                                             string area7 = Console.ReadLine();
                                                             //En esta parte ToLower es para comparar palabras en string sin importar si esta en mayuscula o minuscula
-
+                                                            Console.WriteLine(" ");
                                                             listaAuxiliar.listaAreas.Add(area7);
                                                             int Contado7 = 1;
                                                             foreach (string mostrar in listaAuxiliar.listaAreas)
@@ -255,6 +256,7 @@ namespace Laboratorio2Montalvo
                                                             }
                                                             break;
                                                         case 8:
+                                                            Console.WriteLine(" ");
                                                             Console.WriteLine("Por el momento no podemos agregar más de 8 áreas al supermercado...");
                                                             Console.ReadLine();
                                                             break;
@@ -283,7 +285,7 @@ namespace Laboratorio2Montalvo
                                         
                                 case 2:
                                     Console.WriteLine("Opcion 2");
-                                    Console.WriteLine("----------------------------CREACIÓN DE CATEGORÍAS---------------------------- ");
+                                    Console.WriteLine("----------------------------CREACIÓN DE CATEGORÍAS----------------------------\n ");
                                     Console.WriteLine("Lista de las distintas categorias:");
                                     do
                                     {
@@ -293,7 +295,7 @@ namespace Laboratorio2Montalvo
                                             Console.WriteLine(Contar + " " + mostrar);
                                             Contar++;
                                         }
-                                        Console.WriteLine("9.Salir");
+                                        Console.WriteLine("9 Salir");
                                         Console.WriteLine("\nNOTA: de la opcion 1 a la 4 ya contienen categorias\n");
                                         Console.WriteLine("---------------------------------------------------------------------------");
 
@@ -303,7 +305,7 @@ namespace Laboratorio2Montalvo
                                             Console.WriteLine("Por el momento hay " + proceso + " opciones aparte de las cuatro que ya tienen categorias");
                                            
                                         }
-                                        Console.WriteLine("* Seleccione el área a la que quiere agregar la categoria");
+                                        Console.WriteLine("* Seleccione el área a la que quiere agregar la categorian \n");
                                         Console.Write("\nIngrese un número entero: ");
                                         string entrada3 = Console.ReadLine();
 
@@ -350,7 +352,7 @@ namespace Laboratorio2Montalvo
                                            
                                                 break; 
                                             case 6:
-                                                if (listaAuxiliar.listaAreas.Count <= 5 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                if (listaAuxiliar.listaAreas.Count <= 5 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[5]))
                                                 {
 
                                                     Console.WriteLine("El espacio [5] de la lista está vacío.");
@@ -360,13 +362,13 @@ namespace Laboratorio2Montalvo
                                                 else
 
                                                 {
-                                                    Console.WriteLine($"El espacio [5] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    Console.WriteLine($"El espacio [5] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[5]}'.");
                                                     categoria6.lista();
                                                     Console.ReadLine();
                                                 }
                                                 break;
                                             case 7:
-                                                if (listaAuxiliar.listaAreas.Count <= 6 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                if (listaAuxiliar.listaAreas.Count <= 6 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[6]))
                                                 {
 
                                                     Console.WriteLine("El espacio [6] de la lista está vacío.");
@@ -376,24 +378,25 @@ namespace Laboratorio2Montalvo
                                                 else
 
                                                 {
-                                                    Console.WriteLine($"El espacio [6] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    Console.WriteLine($"El espacio [6] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[6]}'.");
                                                     categoria7.lista();
                                                     Console.ReadLine();
                                                 }
                                                 break;
                                             case 8:
-                                                if (listaAuxiliar.listaAreas.Count <= 7 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[4]))
+                                                if (listaAuxiliar.listaAreas.Count <= 7 || string.IsNullOrEmpty(listaAuxiliar.listaAreas[7]))
                                                 {
 
-                                                    Console.WriteLine("El espacio [6] de la lista está vacío.");
+                                                    Console.WriteLine("El espacio [7] de la lista está vacío.");
                                                     Console.ReadLine();
 
                                                 }
                                                 else
 
                                                 {
-                                                    Console.WriteLine($"El espacio [6] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[4]}'.");
+                                                    Console.WriteLine($"El espacio [7] de la lista está ocupado con el valor '{listaAuxiliar.listaAreas[7]}'.");
                                                     categoria8.lista();
+
                                                     Console.ReadLine();
                                                 }
                                                 break;
@@ -413,6 +416,7 @@ namespace Laboratorio2Montalvo
 
                                     }
                                     while (Option != 9);
+                                    
                                    
                                     break;
                                 case 3:
