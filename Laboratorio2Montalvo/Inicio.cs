@@ -31,8 +31,17 @@ namespace Laboratorio2Montalvo
             Console.WriteLine("\n-Ingrese su nombre de usuario: ");
             nombre = Console.ReadLine();
             Console.WriteLine("\n-Ingrese su edad: ");
-            edad = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Bienvenido al programa usuario "+nombre +" con ID "+UltimoId);
+            string entrada3 = Console.ReadLine();
+
+            while (!int.TryParse(entrada3, out edad))
+            {
+                Console.WriteLine("Error: Debe ingresar un número entero.");
+                Console.WriteLine("\n-Ingrese su edad: ");
+                entrada3 = Console.ReadLine();
+            }
+            
+            Console.WriteLine("Bienvenido al programa usuario "+nombre +" con ID "+UltimoId+ "\n");
+            Console.WriteLine("_______________________________________________________________");
         }
     }
 }

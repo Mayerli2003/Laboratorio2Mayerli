@@ -47,7 +47,7 @@ namespace Laboratorio2Montalvo
                         {
                             Console.WriteLine($"-{mostrar}");
                         }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                        Console.WriteLine("\n1-Ingrese un nueva categoria a la area cocina");
                         string cocina = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -58,11 +58,8 @@ namespace Laboratorio2Montalvo
 
                         break;
                     case 1:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                        
+                        Console.WriteLine("\n2-Ingrese un nueva categoria a la area cocina");
                         string cocina1 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina1);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -72,11 +69,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 2:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                       
+                        Console.WriteLine("\n3-Ingrese un nueva categoria a la area cocina");
                         string cocina2 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina2);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -86,11 +80,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 3:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                        
+                        Console.WriteLine("\n4-Ingrese un nueva categoria a la area cocina");
                         string cocina3 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina3);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -100,11 +91,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 4:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                       
+                        Console.WriteLine("\n5-Ingrese un nueva categoria a la area cocina");
                         string cocina4 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina4);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -114,11 +102,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 5:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                        
+                        Console.WriteLine("\n6-Ingrese un nueva categoria a la area cocina");
                         string cocina5 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina5);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -128,11 +113,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 6:
-                        foreach (string mostrar in listaAuxiliar.listaCocina)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area cocina");
+                       
+                        Console.WriteLine("\n7-Ingrese un nueva categoria a la area cocina");
                         string cocina6 = Console.ReadLine();
                         listaAuxiliar.listaCocina.Add(cocina6);
                         Console.WriteLine("Lista ya editada de cocina");
@@ -157,7 +139,7 @@ namespace Laboratorio2Montalvo
                 
 
             }
-            while (listaAuxiliar.listaCocina.Count > 7);
+            while (listaAuxiliar.listaCocina.Count != 7);
             
 
            
@@ -177,7 +159,7 @@ namespace Laboratorio2Montalvo
                         {
                             Console.WriteLine($"-{mostrar}");
                         }
-                        Console.WriteLine("Ingrese un nueva categoria a la area limpieza");
+                        Console.WriteLine("\n1-Ingrese un nueva categoria a la area limpieza");
                         string limpieza = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -188,11 +170,8 @@ namespace Laboratorio2Montalvo
 
                         break;
                     case 1:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de limpieza");
+                        
+                        Console.WriteLine("\n2-Ingrese un nueva categoria a la area de limpieza");
                         string limpieza1 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza1);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -202,11 +181,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 2:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de limpieza");
+                       
+                        Console.WriteLine("\n3-Ingrese un nueva categoria a la area de limpieza");
                         string limpieza2 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza2);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -216,11 +192,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 3:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de limpiza");
+                       
+                        Console.WriteLine("\n4-Ingrese un nueva categoria a la area de limpiza");
                         string limpieza3 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza3);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -230,11 +203,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 4:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de limpieza");
+                      
+                        Console.WriteLine("\n5-Ingrese un nueva categoria a la area de limpieza");
                         string limpieza4 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza4);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -244,11 +214,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 5:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de limpieza");
+                       
+                        Console.WriteLine("\n6-Ingrese un nueva categoria a la area de limpieza");
                         string limpieza5 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza5);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -258,11 +225,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 6:
-                        foreach (string mostrar in listaAuxiliar.listaLimpieza)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area limpieza");
+                       
+                        Console.WriteLine("\n7-Ingrese un nueva categoria a la area limpieza");
                         string limpieza6 = Console.ReadLine();
                         listaAuxiliar.listaLimpieza.Add(limpieza6);
                         Console.WriteLine("Lista ya editada de limpieza");
@@ -287,7 +251,7 @@ namespace Laboratorio2Montalvo
 
 
             }
-            while (listaAuxiliar.listaLimpieza.Count > 7);
+            while (listaAuxiliar.listaLimpieza.Count != 7);
 
 
         }
@@ -306,7 +270,7 @@ namespace Laboratorio2Montalvo
                         {
                             Console.WriteLine($"-{mostrar}");
                         }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                        Console.WriteLine("\n1-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -317,11 +281,8 @@ namespace Laboratorio2Montalvo
 
                         break;
                     case 1:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                        
+                        Console.WriteLine("\n2-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos1 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos1);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -331,11 +292,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 2:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                       
+                        Console.WriteLine("\n3-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos2 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos2);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -345,11 +303,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 3:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                        
+                        Console.WriteLine("\n4-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos3 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos3);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -359,11 +314,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 4:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                        
+                        Console.WriteLine("\n5-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos4 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos4);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -373,11 +325,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 5:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                       
+                        Console.WriteLine("\n6-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos5 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos5);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -387,11 +336,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 6:
-                        foreach (string mostrar in listaAuxiliar.listaZapatos)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de zapatos");
+                       
+                        Console.WriteLine("\n7-Ingrese un nueva categoria a la area de zapatos");
                         string zapatos6 = Console.ReadLine();
                         listaAuxiliar.listaZapatos.Add(zapatos6);
                         Console.WriteLine("Lista ya editada de zapatos");
@@ -416,7 +362,7 @@ namespace Laboratorio2Montalvo
 
 
             }
-            while (listaAuxiliar.listaZapatos.Count > 7);
+            while (listaAuxiliar.listaZapatos.Count != 7);
         }
 
     }
@@ -433,7 +379,7 @@ namespace Laboratorio2Montalvo
                         {
                             Console.WriteLine($"-{mostrar}");
                         }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                        Console.WriteLine("\n1-Ingrese un nueva categoria a la area de carne");
                         string carne = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne);
                         Console.WriteLine("Lista ya editada de carne");
@@ -444,11 +390,8 @@ namespace Laboratorio2Montalvo
 
                         break;
                     case 1:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                       
+                        Console.WriteLine("\n2-Ingrese un nueva categoria a la area de carne");
                         string carne1 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne1);
                         Console.WriteLine("Lista ya editada de carne");
@@ -458,11 +401,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 2:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                        
+                        Console.WriteLine("\n3-Ingrese un nueva categoria a la area de carne");
                         string carne2 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne2);
                         Console.WriteLine("Lista ya editada de carne");
@@ -472,11 +412,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 3:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                        
+                        Console.WriteLine("\n4-Ingrese un nueva categoria a la area de carne");
                         string carne3 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne3);
                         Console.WriteLine("Lista ya editada de carne");
@@ -486,11 +423,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 4:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                      
+                        Console.WriteLine("\n5-Ingrese un nueva categoria a la area de carne");
                         string carne4 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne4);
                         Console.WriteLine("Lista ya editada de carne");
@@ -500,11 +434,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 5:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                       
+                        Console.WriteLine("\n6-Ingrese un nueva categoria a la area de carne");
                         string carne5 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne5);
                         Console.WriteLine("Lista ya editada de carne");
@@ -514,11 +445,8 @@ namespace Laboratorio2Montalvo
                         }
                         break;
                     case 6:
-                        foreach (string mostrar in listaAuxiliar.listaCarne)
-                        {
-                            Console.WriteLine($"-{mostrar}");
-                        }
-                        Console.WriteLine("Ingrese un nueva categoria a la area de carne");
+                        
+                        Console.WriteLine("\n7-Ingrese un nueva categoria a la area de carne");
                         string carne6 = Console.ReadLine();
                         listaAuxiliar.listaCarne.Add(carne6);
                         Console.WriteLine("Lista ya editada de carne");
@@ -543,7 +471,7 @@ namespace Laboratorio2Montalvo
 
 
             }
-            while (listaAuxiliar.listaCarne.Count > 7);
+            while (listaAuxiliar.listaCarne.Count != 7);
 
         }
 
@@ -585,7 +513,7 @@ namespace Laboratorio2Montalvo
                                     {
                                         Console.WriteLine($"-{mostrar}");
                                     }
-                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[4]);
                                     string dato0 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato0);
                                     Console.WriteLine("Lista ya editada de" + listaAuxiliar.listaAreas[4]);
@@ -597,10 +525,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 1:
 
-                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[4]);
                                     string dato1 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato1);
-                                    Console.WriteLine("Lista ya editada "+ listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada de "+ listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -608,10 +536,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 2:
 
-                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
                                     string dato2 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato2);
-                                    Console.WriteLine("Lista ya editada "+ listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada de "+ listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -619,10 +547,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
 
-                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
                                     string dato3 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(dato3);
-                                    Console.WriteLine("Lista ya editada " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -630,10 +558,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 4:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n5-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
                                     string cocina4 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina4);
-                                    Console.WriteLine("Lista ya editada " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -641,10 +569,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 5:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n6-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
                                     string cocina5 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina5);
-                                    Console.WriteLine("Lista ya editada " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada  de " + listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -652,10 +580,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 6:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("\n7-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[4]);
                                     string cocina6 = Console.ReadLine();
                                     listaAuxiliar.lista5.Add(cocina6);
-                                    Console.WriteLine("Lista ya editada " + listaAuxiliar.listaAreas[4]);
+                                    Console.WriteLine("Lista ya editada de  " + listaAuxiliar.listaAreas[4]);
                                     foreach (string mostrar in listaAuxiliar.lista5)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -668,7 +596,7 @@ namespace Laboratorio2Montalvo
                                         Console.WriteLine(Contador +" "+ mostrar);
                                         Contador++;
                                     }
-                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.WriteLine("\nPor el momento no podemos agregar mas de 7 categorias a cada area");
                                     Console.ReadLine();
                                     break;
 
@@ -719,17 +647,17 @@ namespace Laboratorio2Montalvo
                     case 2:
                         do
                         {
-                            switch (listaAuxiliar.lista5.Count)
+                            switch (listaAuxiliar.lista6.Count)
                             {
                                 case 0:
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
                                     }
-                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[5]);
                                     string dato0 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato0);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de "+ listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -738,10 +666,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 1:
 
-                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[5]);
                                     string dato1 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato1);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de  " + listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -749,10 +677,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 2:
 
-                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato2 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato2);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -760,10 +688,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
 
-                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato3 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato3);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -771,10 +699,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 4:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n5-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato4 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato4);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -782,10 +710,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 5:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n6-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato5 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato5);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[5]);
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -793,10 +721,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 6:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
+                                    Console.WriteLine("\n7-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[5]);
                                     string dato6 = Console.ReadLine();
                                     listaAuxiliar.lista6.Add(dato6);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[5] );
                                     foreach (string mostrar in listaAuxiliar.lista6)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -809,7 +737,7 @@ namespace Laboratorio2Montalvo
                                         Console.WriteLine(Contador + " " + mostrar);
                                         Contador++;
                                     }
-                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.WriteLine("\nPor el momento no podemos agregar mas de 7 categorias a cada area");
                                     Console.ReadLine();
                                     break;
 
@@ -817,7 +745,7 @@ namespace Laboratorio2Montalvo
                             Console.ReadKey();
 
                         }
-                        while (listaAuxiliar.lista5.Count != 7);
+                        while (listaAuxiliar.lista6.Count != 7);
                         break;
                     default:
 
@@ -860,17 +788,17 @@ namespace Laboratorio2Montalvo
                     case 2:
                         do
                         {
-                            switch (listaAuxiliar.lista5.Count)
+                            switch (listaAuxiliar.lista7.Count)
                             {
                                 case 0:
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
                                     }
-                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[6]);
                                     string dato0 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato0);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -879,10 +807,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 1:
 
-                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[6]);
                                     string dato1 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato1);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -890,10 +818,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 2:
 
-                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
                                     string dato2 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato2);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -901,10 +829,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
 
-                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
                                     string dato3 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato3);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -912,10 +840,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 4:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n5-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
                                     string dato4 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato4);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de "+listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -923,10 +851,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 5:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n6-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
                                     string dato5 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato5);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -934,10 +862,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 6:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
+                                    Console.WriteLine("\n7-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[6]);
                                     string dato6 = Console.ReadLine();
                                     listaAuxiliar.lista7.Add(dato6);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[6]);
                                     foreach (string mostrar in listaAuxiliar.lista7)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -950,7 +878,7 @@ namespace Laboratorio2Montalvo
                                         Console.WriteLine(Contador + " " + mostrar);
                                         Contador++;
                                     }
-                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.WriteLine("\nPor el momento no podemos agregar mas de 7 categorias a cada area");
                                     Console.ReadLine();
                                     break;
 
@@ -958,7 +886,7 @@ namespace Laboratorio2Montalvo
                             Console.ReadKey();
 
                         }
-                        while (listaAuxiliar.lista5.Count != 7);
+                        while (listaAuxiliar.lista7.Count != 7);
                         break;
                     default:
 
@@ -1001,17 +929,17 @@ namespace Laboratorio2Montalvo
                     case 2:
                         do
                         {
-                            switch (listaAuxiliar.lista5.Count)
+                            switch (listaAuxiliar.lista8.Count)
                             {
                                 case 0:
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
                                     }
-                                    Console.WriteLine("1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n1-Ingrese un nueva categoria al area " + listaAuxiliar.listaAreas[7]);
                                     string dato0 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato0);
-                                    Console.WriteLine("Lista ya editada ");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1020,10 +948,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 1:
 
-                                    Console.WriteLine("2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n2-Ingrese un nueva categoria a la area  " + listaAuxiliar.listaAreas[7]);
                                     string dato1 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato1);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1031,10 +959,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 2:
 
-                                    Console.WriteLine("3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n3-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
                                     string dato2 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato2);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1042,10 +970,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
 
-                                    Console.WriteLine("4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n4-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
                                     string dato3 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato3);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de" + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1053,10 +981,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 4:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n5-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
                                     string dato4 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato4);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1064,10 +992,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 5:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n6-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
                                     string dato5 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato5);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1075,10 +1003,10 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 6:
 
-                                    Console.WriteLine("Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
+                                    Console.WriteLine("\n7-Ingrese un nueva categoria a la area " + listaAuxiliar.listaAreas[7]);
                                     string dato6 = Console.ReadLine();
                                     listaAuxiliar.lista8.Add(dato6);
-                                    Console.WriteLine("Lista ya editada");
+                                    Console.WriteLine("Lista ya editada de " + listaAuxiliar.listaAreas[7]);
                                     foreach (string mostrar in listaAuxiliar.lista8)
                                     {
                                         Console.WriteLine($"-{mostrar}");
@@ -1091,7 +1019,7 @@ namespace Laboratorio2Montalvo
                                         Console.WriteLine(Contador + " " + mostrar);
                                         Contador++;
                                     }
-                                    Console.WriteLine("Por el momento no podemos agregar mas de 7 categorias a cada area");
+                                    Console.WriteLine("\nPor el momento no podemos agregar mas de 7 categorias a cada area");
                                     Console.ReadLine();
                                     break;
 
@@ -1099,7 +1027,7 @@ namespace Laboratorio2Montalvo
                             Console.ReadKey();
 
                         }
-                        while (listaAuxiliar.lista5.Count != 7);
+                        while (listaAuxiliar.lista8.Count != 7);
                         break;
                     default:
 

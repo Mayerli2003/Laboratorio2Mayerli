@@ -45,7 +45,7 @@ namespace Laboratorio2Montalvo
                 Console.WriteLine("===============================================");
                 Console.WriteLine("    BIENVENIDO AL SUPERMERCADO EL BARATILLO\n");
                 inicio.Usuario(inicio.Nombre, inicio.Edad);
-                Console.WriteLine("_______________Indique su rol_______________\n");
+                Console.WriteLine(" \n       _______________Indique su rol_______________\n");
                 Console.WriteLine("\n1.Administrador");
                 //El Administrador tiene opciones de agregar areas, categorias, productos y vender productos
                 Console.WriteLine("\n2.Comprador");
@@ -61,7 +61,7 @@ namespace Laboratorio2Montalvo
                 while (!int.TryParse(entrada, out Option))
                 {
                     Console.WriteLine("Error: Debe ingresar un número entero.");
-                    Console.WriteLine("\nIngrese un numero entero:");
+                    Console.WriteLine("\nIngrese un numero entero: ");
                     entrada = Console.ReadLine();
                 }
                 if (Option == 1)
@@ -86,7 +86,7 @@ namespace Laboratorio2Montalvo
                             Console.WriteLine("__________ROL DE ADMINISTRADOR__________\n");
                            
 
-                            Console.WriteLine("-Seleccione la opcion que quiere agregar  ");
+                            Console.WriteLine("-Seleccione la opcion que quiere agregar \n ");
                             List<string> listaMenu = new List<string>() { "1-Crear Area", "2-Crear Categorias", "3-Crear Productos", "4-Comprar" ,"5-Salir"};
                             foreach (string mostrar in listaMenu)
                             {
@@ -286,9 +286,10 @@ namespace Laboratorio2Montalvo
                                 case 2:
                                     Console.WriteLine("Opcion 2");
                                     Console.WriteLine("----------------------------CREACIÓN DE CATEGORÍAS----------------------------\n ");
-                                    Console.WriteLine("Lista de las distintas categorias:");
+                                    Console.WriteLine("Lista de las distintas Areas:");
                                     do
                                     {
+                                        Console.WriteLine(" ");
                                         int Contar = 1;
                                         foreach (string mostrar in listaAuxiliar.listaAreas)
                                         {
@@ -305,7 +306,7 @@ namespace Laboratorio2Montalvo
                                             Console.WriteLine("Por el momento hay " + proceso + " opciones aparte de las cuatro que ya tienen categorias");
                                            
                                         }
-                                        Console.WriteLine("* Seleccione el área a la que quiere agregar la categorian \n");
+                                        Console.WriteLine("* Seleccione el área a la que quiere agregar la categoria \n");
                                         Console.Write("\nIngrese un número entero: ");
                                         string entrada3 = Console.ReadLine();
 
@@ -421,11 +422,11 @@ namespace Laboratorio2Montalvo
                                     break;
                                 case 3:
                                     Console.WriteLine("Opcion 3");
-                                    Console.WriteLine("----------------------------Creacion de Productos---------------------------- ");
+                                    Console.WriteLine("----------------------------CREACIÓN DE PRODUCTOS---------------------------- \n");
                                     productos.CreacionProductos(productos.Nombre,productos.Proveedor, productos.FechaCaducidad, productos.FechaEntrada, productos.Detalles, productos.Precio, productos.Unidades, productos.Area,productos.Categoria);
                                     do
                                     {
-                                        Console.WriteLine("\n Lista de Productos actualizada");
+                                        Console.WriteLine("\n Lista de Productos actualizada:");
                                         int Contarr = 1;
                                         foreach (string mostrar in AuxiliarProductos.listaProductos)
                                         {
