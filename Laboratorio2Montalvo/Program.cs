@@ -134,6 +134,7 @@ namespace Laboratorio2Montalvo
                                             {
                                                 case 1:
                                                     Console.WriteLine("Fin de las consultas");
+                                                    Console.ReadLine();
 
                                                     break;
                                                 case 2:
@@ -264,6 +265,10 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 while (listaAuxiliar.listaAreas.Count != 8);
                                                 break;
+                                              default:
+
+                                                Console.WriteLine("Opción no válida.");
+                                                break;
 
                                             }
                                         }
@@ -285,18 +290,16 @@ namespace Laboratorio2Montalvo
                                             Contar++;
                                         }
                                         Console.WriteLine("9.Salir");
-                                        Console.WriteLine("\nNOTA: de la opcion 1 a la 4 ya contienen categorias");
+                                        Console.WriteLine("\nNOTA: de la opcion 1 a la 4 ya contienen categorias\n");
+                                        Console.WriteLine("---------------------------------------------------------------------------");
 
                                         if (listaAuxiliar.listaAreas.Count > 4)
                                         {
                                             int proceso = listaAuxiliar.listaAreas.Count - 4;
                                             Console.WriteLine("Por el momento hay " + proceso + " opciones aparte de las cuatro que ya tienen categorias");
-                                            if (proceso == 1)
-                                            {
-
-                                            }
+                                           
                                         }
-                                        Console.WriteLine("Seleccione el area a la que quiere agregar la categoria");
+                                        Console.WriteLine("* Seleccione el área a la que quiere agregar la categoria");
                                         Console.Write("\nIngrese un número entero: ");
                                         string entrada3 = Console.ReadLine();
 
@@ -372,7 +375,7 @@ namespace Laboratorio2Montalvo
                                 case 3:
                                     Console.WriteLine("Opcion 3");
                                     Console.WriteLine("----------------------------Creacion de Productos---------------------------- ");
-                                    productos.CreacionProductos(productos.Nombre,productos.Proveedor, productos.FechaCaducidad, productos.FechaEntrada, productos.Detalles, productos.Precio, productos.Unidades);
+                                    productos.CreacionProductos(productos.Nombre,productos.Proveedor, productos.FechaCaducidad, productos.FechaEntrada, productos.Detalles, productos.Precio, productos.Unidades, productos.Area,productos.Categoria);
                                     do
                                     {
                                         Console.WriteLine("\n Lista de Productos actualizada");
