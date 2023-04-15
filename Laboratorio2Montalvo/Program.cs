@@ -71,7 +71,7 @@ namespace Laboratorio2Montalvo
                 }
                 if (Option == 2)
                 {
-                    inicio.Nivel = "Vendedor";
+                    inicio.Nivel = "Comprador";
                     Console.WriteLine("Opciones del nivel de " + inicio.Nivel);
                 }
                
@@ -510,7 +510,7 @@ namespace Laboratorio2Montalvo
                                 case 4:
 
                                     Console.WriteLine("Opcion 4");
-                                    Console.WriteLine("----------------------------Comprar producto---------------------------- ");
+                                    Console.WriteLine("----------------------------COMPRAR PRODUCTO---------------------------- ");
                                     do
                                     {
                                        
@@ -542,13 +542,13 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"-Precio: {mostrar}");
                                                 }
                                                 foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"-Unidades: {mostrar}");
                                                 }
-                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                                 int n = int.Parse(Console.ReadLine());
                                                 int proceso = AuxiliarProductos.listaArrozUnidades[0] - n;
                                                 
@@ -561,20 +561,22 @@ namespace Laboratorio2Montalvo
                                                     }
                                                     foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"-Precio: {mostrar}");
                                                     }
                                                     foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"-Unidades: {mostrar}");
                                                     }
-                                                    Console.WriteLine("Realizar el pago");
+                                                    Console.WriteLine(" ");
+                                                    Console.WriteLine("\nRealizar el pago");
                                                     double total = n * AuxiliarProductos.listaArrozPrecio[0];
-                                                    Console.WriteLine("El total a pagar es de " + total);
-
+                                                    Console.WriteLine("\nEl total a pagar es de " + total);
+                                                    inicio.Nivel = "Administrador";
+                                                    Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                                 }
                                                 if (proceso < 0)
                                                 {
-                                                    Console.WriteLine("No hay suficientes unidades faltan "+proceso);
+                                                    Console.WriteLine("\nNo hay suficientes unidades faltan "+proceso);
 
                                                 }
                                                 break;
@@ -585,13 +587,13 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Precio: {mostrar}");
                                                 }
                                                 foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Unidades: {mostrar}");
                                                 }
-                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                                 int nn = int.Parse(Console.ReadLine());
                                                 int proceso1 = AuxiliarProductos.listaJabonOlorUnidades[0] - nn;
 
@@ -604,20 +606,22 @@ namespace Laboratorio2Montalvo
                                                     }
                                                     foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Precio: {mostrar}");
                                                     }
                                                     foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Unidades: {mostrar}");
                                                     }
-                                                    Console.WriteLine("Realizar el pago");
+                                                    Console.WriteLine(" ");
+                                                    Console.WriteLine("\nRealizar el pago");
                                                     double total = nn * AuxiliarProductos.listaJabonOlorPrecio[0];
-                                                    Console.WriteLine("El total a pagar es de " + total);
-
+                                                    Console.WriteLine("\nEl total a pagar es de " + total);
+                                                    inicio.Nivel = "Administrador";
+                                                    Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                                 }
                                                 if (proceso1 < 0)
                                                 {
-                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso1);
+                                                    Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso1);
 
                                                 }
                                                 break;
@@ -628,13 +632,13 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Precio: {mostrar}");
                                                 }
                                                 foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Unidades: {mostrar}");
                                                 }
-                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                                 int nnn = int.Parse(Console.ReadLine());
                                                 int proceso2 = AuxiliarProductos.listaArrozUnidades[0] - nnn;
 
@@ -647,20 +651,22 @@ namespace Laboratorio2Montalvo
                                                     }
                                                     foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Precio: {mostrar}");
                                                     }
                                                     foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Unidades: {mostrar}");
                                                     }
-                                                    Console.WriteLine("Realizar el pago");
+                                                    Console.WriteLine(" ");
+                                                    Console.WriteLine("\nRealizar el pago");
                                                     double total = nnn * AuxiliarProductos.listaTenisMujerPrecio[0];
-                                                    Console.WriteLine("El total a pagar es de " + total);
-
+                                                    Console.WriteLine("\nEl total a pagar es de " + total);
+                                                    inicio.Nivel = "Administrador";
+                                                    Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                                 }
                                                 if (proceso2 < 0)
                                                 {
-                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso2);
+                                                    Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso2);
 
                                                 }
                                                 break;
@@ -671,13 +677,13 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 foreach (double mostrar in AuxiliarProductos.lista4Precio)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Precio: {mostrar}");
                                                 }
                                                 foreach (int mostrar in AuxiliarProductos.lista4Unidades)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Unidades: {mostrar}");
                                                 }
-                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                                 int nnnn = int.Parse(Console.ReadLine());
                                                 int proceso3 = AuxiliarProductos.lista4Unidades[0] - nnnn;
 
@@ -690,20 +696,23 @@ namespace Laboratorio2Montalvo
                                                     }
                                                     foreach (double mostrar in AuxiliarProductos.lista4Precio)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Precio: {mostrar}");
                                                     }
                                                     foreach (int mostrar in AuxiliarProductos.lista4Unidades)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Unidades: :{mostrar}");
                                                     }
-                                                    Console.WriteLine("Realizar el pago");
-                                                    double total = nnnn * AuxiliarProductos.lista4Precio[0];
-                                                    Console.WriteLine("El total a pagar es de " + total);
+                                                    Console.WriteLine(" ");
 
+                                                    Console.WriteLine("\nRealizar el pago");
+                                                    double total = nnnn * AuxiliarProductos.lista4Precio[0];
+                                                    Console.WriteLine("\nEl total a pagar es de " + total);
+                                                    inicio.Nivel = "Administrador";
+                                                    Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                                 }
                                                 if (proceso3 < 0)
                                                 {
-                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso3);
+                                                    Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso3);
 
                                                 }
                                                 break;
@@ -714,13 +723,13 @@ namespace Laboratorio2Montalvo
                                                 }
                                                 foreach (double mostrar in AuxiliarProductos.lista5Precio)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Precio: {mostrar}");
                                                 }
                                                 foreach (int mostrar in AuxiliarProductos.lista5Unidades)
                                                 {
-                                                    Console.WriteLine($"-{mostrar}");
+                                                    Console.WriteLine($"Unidades: {mostrar}");
                                                 }
-                                                Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                                Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                                 int nnnnn = int.Parse(Console.ReadLine());
                                                 int proceso4 = AuxiliarProductos.lista5Unidades[0] - nnnnn;
 
@@ -733,20 +742,23 @@ namespace Laboratorio2Montalvo
                                                     }
                                                     foreach (double mostrar in AuxiliarProductos.lista5Precio)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Preio: {mostrar}");
                                                     }
                                                     foreach (int mostrar in AuxiliarProductos.lista5Unidades)
                                                     {
-                                                        Console.WriteLine($"-{mostrar}");
+                                                        Console.WriteLine($"Unidades: {mostrar}");
                                                     }
-                                                    Console.WriteLine("Realizar el pago");
+                                                    Console.WriteLine(" ");
+                                                    Console.WriteLine("\nRealizar el pago");
                                                     double total = nnnnn * AuxiliarProductos.lista5Precio[0];
-                                                    Console.WriteLine("El total a pagar es de " + total);
-
+                                                    Console.WriteLine("\nEl total a pagar es de " + total);
+                                                    Console.WriteLine("\n----------Datos del cliente----------");
+                                                    inicio.Nivel = "Administrador";
+                                                    Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                                 }
                                                 if (proceso4 < 0)
                                                 {
-                                                    Console.WriteLine("No hay suficientes unidades faltan " + proceso4);
+                                                    Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso4);
 
                                                 }
 
@@ -790,7 +802,9 @@ namespace Laboratorio2Montalvo
                         while (Option != 5);
                         break;
                     case 2:
-                        Console.WriteLine("----------------------------Comprar producto---------------------------- ");
+                        Console.WriteLine("Ha seleccionado la opcion 2\n ");
+                        Console.WriteLine("                  __________ROL DE COMPRADOR__________\n");
+                        Console.WriteLine("----------------------------COMPRAR PRODUCTO---------------------------- ");
                         do
                         {
 
@@ -822,13 +836,13 @@ namespace Laboratorio2Montalvo
                                     }
                                     foreach (double mostrar in AuxiliarProductos.listaArrozPrecio)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"-Precio: {mostrar}");
                                     }
                                     foreach (int mostrar in AuxiliarProductos.listaArrozUnidades)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"-Unidades: {mostrar}");
                                     }
-                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                     int n = int.Parse(Console.ReadLine());
                                     int proceso = AuxiliarProductos.listaArrozUnidades[0] - n;
 
@@ -847,14 +861,18 @@ namespace Laboratorio2Montalvo
                                         {
                                             Console.WriteLine($"-{mostrar}");
                                         }
-                                        Console.WriteLine("Realizar el pago");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine("\nRealizar el pago");
                                         double total = n * AuxiliarProductos.listaArrozPrecio[0];
-                                        Console.WriteLine("El total a pagar es de " + total);
+                                        Console.WriteLine("\nEl total a pagar es de " + total);
+                                        Console.WriteLine("\n----------Datos del cliente----------");
+                                        inicio.Nivel = "Comprador";
+                                        Console.WriteLine("\nId: "+inicio.Id+"\nNivel: "+inicio.Nivel);
 
-                                    }
+                                    }                                         
                                     if (proceso < 0)
                                     {
-                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso);
+                                        Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso);
 
                                     }
                                     break;
@@ -865,13 +883,13 @@ namespace Laboratorio2Montalvo
                                     }
                                     foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Precio: {mostrar}");
                                     }
                                     foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Unidades: {mostrar}");
                                     }
-                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                     int nn = int.Parse(Console.ReadLine());
                                     int proceso1 = AuxiliarProductos.listaJabonOlorUnidades[0] - nn;
 
@@ -884,20 +902,23 @@ namespace Laboratorio2Montalvo
                                         }
                                         foreach (double mostrar in AuxiliarProductos.listaJabonOlorPrecio)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"PRecio: {mostrar}");
                                         }
                                         foreach (int mostrar in AuxiliarProductos.listaJabonOlorUnidades)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Unidades: {mostrar}");
                                         }
-                                        Console.WriteLine("Realizar el pago");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine("\nRealizar el pago");
                                         double total = nn * AuxiliarProductos.listaJabonOlorPrecio[0];
-                                        Console.WriteLine("El total a pagar es de " + total);
-
+                                        Console.WriteLine("\nEl total a pagar es de " + total);
+                                        Console.WriteLine("\n----------Datos del cliente----------");
+                                        inicio.Nivel = "Comprador";
+                                        Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                     }
                                     if (proceso1 < 0)
                                     {
-                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso1);
+                                        Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso1);
 
                                     }
                                     break;
@@ -908,13 +929,13 @@ namespace Laboratorio2Montalvo
                                     }
                                     foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Precio: {mostrar}");
                                     }
                                     foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Unidades: {mostrar}");
                                     }
-                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                     int nnn = int.Parse(Console.ReadLine());
                                     int proceso2 = AuxiliarProductos.listaArrozUnidades[0] - nnn;
 
@@ -927,20 +948,23 @@ namespace Laboratorio2Montalvo
                                         }
                                         foreach (double mostrar in AuxiliarProductos.listaTenisMujerPrecio)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Precio: {mostrar}");
                                         }
                                         foreach (int mostrar in AuxiliarProductos.listaTenisMujerUnidades)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Unidades: {mostrar}");
                                         }
-                                        Console.WriteLine("Realizar el pago");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine("\nRealizar el pago");
                                         double total = nnn * AuxiliarProductos.listaTenisMujerPrecio[0];
-                                        Console.WriteLine("El total a pagar es de " + total);
-
+                                        Console.WriteLine("\nEl total a pagar es de " + total);
+                                        Console.WriteLine("\n----------Datos del cliente----------");
+                                        inicio.Nivel = "Comprador";
+                                        Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                     }
                                     if (proceso2 < 0)
                                     {
-                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso2);
+                                        Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso2);
 
                                     }
                                     break;
@@ -951,13 +975,13 @@ namespace Laboratorio2Montalvo
                                     }
                                     foreach (double mostrar in AuxiliarProductos.lista4Precio)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Precio: {mostrar}");
                                     }
                                     foreach (int mostrar in AuxiliarProductos.lista4Unidades)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Unidades: {mostrar}");
                                     }
-                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                     int nnnn = int.Parse(Console.ReadLine());
                                     int proceso3 = AuxiliarProductos.lista4Unidades[0] - nnnn;
 
@@ -970,20 +994,23 @@ namespace Laboratorio2Montalvo
                                         }
                                         foreach (double mostrar in AuxiliarProductos.lista4Precio)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Precio: {mostrar}");
                                         }
                                         foreach (int mostrar in AuxiliarProductos.lista4Unidades)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Unidades: {mostrar}");
                                         }
-                                        Console.WriteLine("Realizar el pago");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine("\nRealizar el pago");
                                         double total = nnnn * AuxiliarProductos.lista4Precio[0];
-                                        Console.WriteLine("El total a pagar es de " + total);
-
+                                        Console.WriteLine("\nEl total a pagar es de " + total);
+                                        Console.WriteLine("\n----------Datos del cliente----------");
+                                        inicio.Nivel = "Comprador";
+                                        Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
                                     }
                                     if (proceso3 < 0)
                                     {
-                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso3);
+                                        Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso3);
 
                                     }
                                     break;
@@ -994,13 +1021,13 @@ namespace Laboratorio2Montalvo
                                     }
                                     foreach (double mostrar in AuxiliarProductos.lista5Precio)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Precio: {mostrar}");
                                     }
                                     foreach (int mostrar in AuxiliarProductos.lista5Unidades)
                                     {
-                                        Console.WriteLine($"-{mostrar}");
+                                        Console.WriteLine($"Unidades: {mostrar}");
                                     }
-                                    Console.WriteLine("¿Cuántas compras desea sumar? de este producto");
+                                    Console.WriteLine("\n¿Cuántas compras desea sumar? de este producto");
                                     int nnnnn = int.Parse(Console.ReadLine());
                                     int proceso4 = AuxiliarProductos.lista5Unidades[0] - nnnnn;
 
@@ -1013,20 +1040,24 @@ namespace Laboratorio2Montalvo
                                         }
                                         foreach (double mostrar in AuxiliarProductos.lista5Precio)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Precio: {mostrar}");
                                         }
                                         foreach (int mostrar in AuxiliarProductos.lista5Unidades)
                                         {
-                                            Console.WriteLine($"-{mostrar}");
+                                            Console.WriteLine($"Unidades: {mostrar}");
                                         }
-                                        Console.WriteLine("Realizar el pago");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine("\nRealizar el pago");
                                         double total = nnnnn * AuxiliarProductos.lista5Precio[0];
-                                        Console.WriteLine("El total a pagar es de " + total);
+                                        Console.WriteLine("\nEl total a pagar es de " + total);
+                                        Console.WriteLine("\n----------Datos del cliente----------");
+                                        inicio.Nivel = "Comprador";
+                                        Console.WriteLine("\nId: " + inicio.Id + "\nNivel: " + inicio.Nivel);
 
                                     }
                                     if (proceso4 < 0)
                                     {
-                                        Console.WriteLine("No hay suficientes unidades faltan " + proceso4);
+                                        Console.WriteLine("\nNo hay suficientes unidades faltan " + proceso4);
 
                                     }
 

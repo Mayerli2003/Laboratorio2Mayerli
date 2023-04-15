@@ -18,15 +18,15 @@ namespace Laboratorio2Montalvo
         //public static List<string> listaZapatos = new List<string>() { "Tacones", "Tenis", "Sandalias", "Botas" };
         //public static List<string> listaCarne = new List<string>() { "Carne de res", "Carne molida", "Carne de cerdo", "Carne de pollo" };
 
-        public static List<string> listaArroz = new List<string>() { "Nombre:Arroz" ,"Proveedor:Mario Martínez","Fecha de caducidad:12 de enero 2023","Fecha de entrada:12 de enero 2022","Detalles:Arroz San Pedro","Area: cocina","Categoria:comida"};
+        public static List<string> listaArroz = new List<string>() { "Nombre: Arroz" ,"Proveedor: Mario Martínez","Fecha de caducidad: 12 de enero 2023","Fecha de entrada: 12 de enero 2022","Detalles: Arroz San Pedro","Area: cocina","Categoria: comida"};
         public static List<double> listaArrozPrecio = new List<double>() {2.0};
         public static List<int> listaArrozUnidades = new List<int>() {12 };
 
-        public static List<string> listaJabonOlor = new List<string>() { "Nombre:Jabon de olor", "Proveedor:Meiko Akisuki", "Fecha de caducidad:14 de enero 2023", "Fecha de entrada:14 de enero 2022", "Detalles:Jabon de avena", "Area: limpieza", "Categoria:jabones" };
+        public static List<string> listaJabonOlor = new List<string>() { "Nombre: Jabon de olor", "Proveedor: Meiko Akisuki", "Fecha de caducidad: 14 de enero 2023", "Fecha de entrada: 14 de enero 2022", "Detalles: Jabon de avena", "Area: limpieza", "Categoria: jabones" };
         public static List<double> listaJabonOlorPrecio = new List<double>() { 4.50};
         public static List<int> listaJabonOlorUnidades = new List<int>() {12 };
 
-        public static List<string> listaTenisMujer = new List<string>() { "Nombre:Tenis de mujer", "Proveedor:Marbely Damaris", "Fecha de caducidad:12 de marzo 2023", "Fecha de entrada:12 de marzo 2000", "Detalles:color rosa tierno", "Area: zapateria", "Categoria:tenis" };
+        public static List<string> listaTenisMujer = new List<string>() { "Nombre: Tenis de mujer", "Proveedor: Marbely Damaris", "Fecha de caducidad: 12 de marzo 2023", "Fecha de entrada: 12 de marzo 2000", "Detalles: color rosa tierno", "Area: zapateria", "Categoria: tenis" };
         public static List<double> listaTenisMujerPrecio = new List<double>() {45.67 };
         public static List<int> listaTenisMujerUnidades = new List<int>() { 12};
 
@@ -139,7 +139,7 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[1]);
                         Console.ReadLine();
@@ -147,35 +147,35 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCocina[6]);
                         Console.ReadLine();
@@ -198,49 +198,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaLimpieza[6]);
                         Console.ReadLine();
@@ -263,49 +263,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaZapatos[6]);
                         Console.ReadLine();
@@ -328,14 +328,14 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[1]);
                         Console.ReadLine();
@@ -343,35 +343,35 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.listaCarne[6]);
                         Console.ReadLine();
@@ -394,49 +394,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista5[6]);
                         Console.ReadLine();
@@ -459,49 +459,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista6[6]);
                         Console.ReadLine();
@@ -524,49 +524,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista7[6]);
                         Console.ReadLine();
@@ -589,49 +589,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[0]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[1]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[2]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[3]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[4]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[5]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[6]);
                         AuxiliarProductos.lista4.Add(listaAuxiliar.lista8[6]);
                         Console.ReadLine();
@@ -644,36 +644,36 @@ namespace Laboratorio2Montalvo
                     }
                 }
                 Console.WriteLine("------------Ingresando el producto 5------------");
-                Console.WriteLine("Ingrese el nombre del producto:");
+                Console.WriteLine("\nIngrese el nombre del producto:");
                 nombre = Console.ReadLine();
                 AuxiliarProductos.listaProductos.Add(nombre);
                 AuxiliarProductos.lista5.Add(nombre);
 
-                Console.WriteLine("Ingrese el nombre del proveedor");
+                Console.WriteLine("\nIngrese el nombre del proveedor:");
                 proveedor = Console.ReadLine();
                 AuxiliarProductos.lista5.Add(proveedor);
 
-                Console.WriteLine("Ingrese la fecha de caducidad ");
+                Console.WriteLine("\nIngrese la fecha de caducidad: ");
                 fechaCaducidad = Console.ReadLine();
                 AuxiliarProductos.lista5.Add(fechaCaducidad);
 
-                Console.WriteLine("Ingrese la fecha de entrada ");
+                Console.WriteLine("\nIngrese la fecha de entrada: ");
                 fechaEntrada = Console.ReadLine();
                 AuxiliarProductos.lista5.Add(fechaEntrada);
 
-                Console.WriteLine("Ingrese los detalles");
+                Console.WriteLine("\nIngrese los detalles:");
                 detalles = Console.ReadLine();
                 AuxiliarProductos.lista5.Add(detalles);
 
-                Console.WriteLine("Ingrese el precio del producto");
+                Console.WriteLine("\nIngrese el precio del producto:");
                 precio = Convert.ToDouble(Console.ReadLine());
                 AuxiliarProductos.lista5Precio.Add(precio);
 
-                Console.WriteLine("Ingrese las unidades que tendra dicho producto");
+                Console.WriteLine("\nIngrese las unidades que tendra dicho producto:");
                 unidades = Convert.ToInt32(Console.ReadLine());
                 AuxiliarProductos.lista5Unidades.Add(unidades);
 
-                Console.WriteLine("Ingrese la area del produto ");
+                Console.WriteLine("\nIngrese la area del produto: ");
                 int Contado1 = 1;
                 foreach (string mostrar in listaAuxiliar.listaAreas)
                 {
@@ -700,7 +700,7 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("1-1 Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
 
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[0]);
@@ -708,7 +708,7 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[1]);
                         Console.ReadLine();
@@ -716,35 +716,35 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[0] + "\n" + "Categoria: " + listaAuxiliar.listaCocina[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCocina[6]);
                         Console.ReadLine();
@@ -767,49 +767,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[1] + "\n" + "Categoria: " + listaAuxiliar.listaLimpieza[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaLimpieza[6]);
                         Console.ReadLine();
@@ -832,49 +832,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[2] + "\n" + "Categoria: " + listaAuxiliar.listaZapatos[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaZapatos[6]);
                         Console.ReadLine();
@@ -897,14 +897,14 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[1]);
                         Console.ReadLine();
@@ -912,35 +912,35 @@ namespace Laboratorio2Montalvo
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[3] + "\n" + "Categoria: " + listaAuxiliar.listaCarne[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.listaCarne[6]);
                         Console.ReadLine();
@@ -963,49 +963,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[4] + "\n" + "Categoria: " + listaAuxiliar.lista5[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista5[6]);
                         Console.ReadLine();
@@ -1028,49 +1028,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[5] + "\n" + "Categoria: " + listaAuxiliar.lista6[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista6[6]);
                         Console.ReadLine();
@@ -1093,49 +1093,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[6] + "\n" + "Categoria: " + listaAuxiliar.lista7[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista7[6]);
                         Console.ReadLine();
@@ -1158,49 +1158,49 @@ namespace Laboratorio2Montalvo
                     categoria = Console.ReadLine();
                     if (categoria == "1")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[0]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[0]);
                         Console.ReadLine();
                     }
                     if (categoria == "2")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[1]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[1]);
                         Console.ReadLine();
                     }
                     if (categoria == "3")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[2]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[2]);
                         Console.ReadLine();
                     }
                     if (categoria == "4")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[3]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[3]);
                         Console.ReadLine();
                     }
                     if (categoria == "5")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[4]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[4]);
                         Console.ReadLine();
                     }
                     if (categoria == "6")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[5]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[5]);
                         Console.ReadLine();
                     }
                     if (categoria == "7")
                     {
-                        Console.WriteLine("Datos del producto ingresado");
+                        Console.WriteLine("\n----------Datos del producto ingresado----------\n");
                         Console.WriteLine("Nombre: " + nombre + "\n" + "Proveedor: " + proveedor + "\n" + "Fecha de caducidad: " + fechaCaducidad + "\n" + "Fecha de entrada: " + fechaEntrada + "\n" + "Detalles: " + detalles + "\n" + "Precio: " + precio.ToString("0.00") + "\n" + "Unidades: " + unidades + "\n" + "Area: " + listaAuxiliar.listaAreas[7] + "\n" + "Categoria: " + listaAuxiliar.lista8[6]);
                         AuxiliarProductos.lista5.Add(listaAuxiliar.lista8[6]);
                         Console.ReadLine();
